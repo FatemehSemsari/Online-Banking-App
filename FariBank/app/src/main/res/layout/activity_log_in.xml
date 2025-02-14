@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:background="@drawable/photo1720198180"
+    tools:context=".LogInActivity">
+
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/phonenumber"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="276dp"
+        android:hint="PhoneNumber"
+        app:errorEnabled="true"
+        app:counterEnabled="true"
+        app:counterMaxLength="11"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:startIconDrawable="@drawable/costum_phonenumber">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textInputEditText_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:maxLength="11" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:hint="Password"
+        app:counterEnabled="true"
+        app:counterMaxLength="11"
+        app:startIconDrawable="@drawable/costum_password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:endIconMode="password_toggle"
+        app:layout_constraintTop_toTopOf="@+id/phonenumber">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textInputEditText_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="11"
+            android:inputType="textPassword"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/log_in"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:text="LogIn"
+        app:rippleColor="@color/design_default_color_primary"
+        app:cornerRadius="10000dp"
+        app:icon="@drawable/log_in"
+        app:iconGravity="textStart"
+        android:layout_marginTop="205dp"
+        app:layout_constraintTop_toTopOf="@+id/phonenumber" />
+
+    <TextView
+        android:id="@+id/band_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fari Bank"
+        android:textSize="30sp"
+        android:textColor="@color/design_default_color_primary"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/phonenumber"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        android:layout_marginBottom="-98dp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="Not yet registered? SignUp Now"
+        android:textSize="14sp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/signUpText"
+        android:textColor="@color/design_default_color_primary"
+        app:layout_constraintBottom_toTopOf="@+id/phonenumber"
+        android:layout_marginBottom="-840dp"/>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

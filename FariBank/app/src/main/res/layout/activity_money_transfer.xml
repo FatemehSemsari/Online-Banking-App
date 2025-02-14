@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MoneyTransferActivity"
+    android:background="@drawable/transfer1">
+
+
+    <Button
+        android:id="@+id/card_by_card"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:text="fery to other banks"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.388" />
+
+    <Button
+        android:id="@+id/paypol"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="40dp"
+        android:text="paypol"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card_by_card"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/stable_transfer"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="40dp"
+        android:text="stable transfer"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/paypol"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/fery_to_fery"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="40dp"
+        android:text="fery to fery"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stable_transfer"
+        app:layout_constraintVertical_bias="0.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

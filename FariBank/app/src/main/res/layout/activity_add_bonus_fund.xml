@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddBonusFundActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/costum_edittext">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:padding="24dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bonus Fund"
+                android:id="@+id/signUpText"
+                android:textSize="36dp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="@color/dark_purple"/>
+
+            <EditText
+                android:id="@+id/amount"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/costum_edittext"
+                android:drawablePadding="8dp"
+                android:padding="8dp"
+                android:hint="amount"
+                android:textColor="@color/black"
+                android:inputType="text"
+                android:textSize="14sp"
+                android:textColorHighlight="@color/cardview_dark_background"
+                android:layout_marginTop="40dp"/>
+            <EditText
+                android:id="@+id/days"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/costum_edittext"
+                android:drawablePadding="8dp"
+                android:padding="8dp"
+                android:hint="days"
+                android:textColor="@color/black"
+                android:inputType="text"
+                android:textSize="14sp"
+                android:textColorHighlight="@color/cardview_dark_background"
+                android:layout_marginTop="20dp"/>
+            <EditText
+                android:id="@+id/hours"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/costum_edittext"
+                android:drawablePadding="8dp"
+                android:padding="8dp"
+                android:hint="hours"
+                android:textColor="@color/black"
+                android:inputType="phone"
+                android:textSize="14sp"
+                android:textColorHighlight="@color/cardview_dark_background"
+                android:layout_marginTop="20dp"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/add_bonus"
+                android:text="Add Fund"
+                android:textSize="18sp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/dark_purple"
+                app:cornerRadius="20dp"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
