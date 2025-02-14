@@ -1,1 +1,3 @@
 # Online-Banking-App
+This project is my first project working with android . The backend of this project is in java .
+This project is an online banking application where the user can register and log in to their account . In his account, the user can charge his credit card, make money transfers, create a fund or apply for a loan . The user can also add or remove contacts . If a problem occurs or he has a request, he can register it and after a few seconds he will receive an automatic message from the program . The profile section is not yet active and this application is not yet connected to the database . 
